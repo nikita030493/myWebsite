@@ -6,7 +6,7 @@ namespace NikitaDev.Pages
     {
         public void OnGet()
         {
-            //Test code
+            //Test github
         }
     }
 }
