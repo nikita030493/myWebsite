@@ -6,7 +6,7 @@ namespace NikitaDev.Pages
     {
         public void OnGet()
         {
-
+            // Code goes here!
         }
     }
 }

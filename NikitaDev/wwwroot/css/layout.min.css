@@ -1,0 +1,1 @@
+﻿@font-face{font-family:'montserrat-regular';src:url("../fonts/montserrat-regular.ttf") format("truetype");}@font-face{font-family:'roboto-regular';src:url("../fonts/Roboto-Regular.ttf") format("truetype");}body{font-family:montserrat-regular;display:flex;min-height:100vh;flex-direction:column;}main{flex:1 0 auto;}
