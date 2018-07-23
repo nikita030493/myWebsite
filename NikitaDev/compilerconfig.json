@@ -1,0 +1,26 @@
+﻿[
+  {
+    "outputFile": "wwwroot/lib/materialize/css/materialize.css",
+    "inputFile": "wwwroot/lib/materialize/sass/materialize.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/home.css",
+    "inputFile": "wwwroot/sass/home.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/about.css",
+    "inputFile": "wwwroot/sass/about.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/contact.css",
+    "inputFile": "wwwroot/sass/contact.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/layout.css",
+    "inputFile": "wwwroot/sass/layout.scss"
+  },
+  {
+    "outputFile": "wwwroot/css/work.css",
+    "inputFile": "wwwroot/sass/work.scss"
+  }
+]

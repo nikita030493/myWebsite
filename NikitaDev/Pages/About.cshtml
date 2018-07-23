@@ -1,0 +1,109 @@
+﻿@page
+@inject Microsoft.Extensions.Configuration.IConfiguration Configuration
+@{ ViewData["Title"] = "About Nikita"; }
+@section styles { <link href="~/css/about.css" rel="stylesheet" /> }
+
+<div class="row">
+
+    <div class="col s8">
+        <p>
+            I'm a full-stack web developer. I'm a graduate of software engeneering 
+            and have been working in the field for 3 years.
+            I can help you create anything on the web, wheather it is
+            a simple landing page or a complex, feature reach web application.
+        </p>
+    </div>
+
+    <div class="col s4">
+        <img class="profile-img" src="~/images/Profile.JPG" alt="" />
+    </div>
+</div>
+
+<div class="row">
+    <div class="col s12">
+        <h4 class="red-text text-lighten-2">I will do:</h4>
+        <ul class="browser-default">
+            <li>Simple websites: static home/landing page with little or no logic involved.</li>
+            <li>User Intrface / Front-end: responsive web interfaces, standalone or intergrated with existing back-end.</li>
+            <li>Server Logic / Back-end: typically developed together with the front-end,</li>
+        </ul>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col s12">
+        <h4 class="red-text text-lighten-2">Skills:</h4>
+        <br />
+        <ul class="">
+            <li>
+                <h5>Front-end development:</h5>
+                <br />
+                <div class="row">
+                    
+                    <div class="col s2">
+                        <div class="row center-align">
+                            <img class="tech-skill-img" src="~/images/html5.png"/>
+                        </div>
+                        <div class="row center-align">HTML5</div>
+                    </div>
+                    <div class="col s2">
+                        <div class="row center-align">
+                            <img class="tech-skill-img" src="~/images/css3.png"/>
+                        </div>
+                        <div class="row center-align">CCS3</div>
+                    </div>
+                    <div class="col s2">
+                        <div class="row center-align">
+                            <img class="tech-skill-img" src="~/images/sass.png"/>
+                        </div>
+                        <div class="row center-align">SASS</div>
+                    </div>
+                    <div class="col s2">
+                        <div class="row center-align">
+                            <img class="tech-skill-img" src="~/images/js.png"/>
+                        </div>
+                        <div class="row center-align">JavaScript</div>
+                    </div>
+                    <div class="col s2">
+                        <div class="row center-align">
+                            <img class="tech-skill-img" src="~/images/jquery.png"/>
+                        </div>
+                        <div class="row center-align">jQuery</div>
+                    </div>
+                </div>
+            </li>
+
+            <li><h5>Back-end development:</h5></li>
+            <li>
+                <br />
+                <div class="row">
+
+                    <div class="col s2">
+                        <div class="row center-align">
+                            <img class="tech-skill-img" src="~/images/aspnet.png" />
+                        </div>
+                        <div class="row center-align">ASP.NET</div>
+                    </div>
+                    <div class="col s2">
+                        <div class="row center-align">
+                            <img class="tech-skill-img" src="~/images/visualstudio.png" />
+                        </div>
+                        <div class="row center-align">C#</div>
+                    </div>
+                    <div class="col s2">
+                        <div class="row center-align">
+                            <img class="tech-skill-img" src="~/images/SQLServer.png" />
+                        </div>
+                        <div class="row center-align">SQL Server</div>
+                    </div>
+                    <div class="col s2">
+                        <div class="row center-align">
+                            <img class="tech-skill-img" src="~/images/entityframework.png" />
+                        </div>
+                        <div class="row center-align">Entity Framework</div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

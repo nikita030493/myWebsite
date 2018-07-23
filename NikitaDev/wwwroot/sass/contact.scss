@@ -1,0 +1,28 @@
+﻿
+$form-color: #00766c;
+
+.form-details-color {
+    background-color: $form-color
+}
+
+%color {
+    color: $form-color !important;
+}
+%border-and-box-shadow {
+    border-bottom: 1px solid $form-color !important;
+    box-shadow: 0 1px 0 0 $form-color !important;
+}
+
+.input-field {
+
+    label, input:focus + label, .prefix.active {
+        @extend %color;
+    }
+
+    input:focus, input.valid, input.invalid,
+    textarea.materialize-textarea:focus {
+        @extend %border-and-box-shadow
+    }
+}
+
+

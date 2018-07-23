@@ -1,0 +1,17 @@
+﻿@mixin format-image($radius, $width, $height) {
+    width: $width;
+    height: $height;
+    border-radius: $radius;
+}
+
+.profile-img {
+    @include format-image(50%, 200px, 200px);
+}
+
+.tech-skill-img {
+    @include format-image(0, 100px, 100px);
+}
+
+p, ul{
+    font-size: 20px;
+}

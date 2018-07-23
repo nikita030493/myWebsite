@@ -1,0 +1,96 @@
+﻿@page
+@model NikitaDev.Pages.ContactModel
+@{ ViewData["Title"] = "Contact"; }
+@section styles { <link href="~/css/contact.css" rel="stylesheet" /> }
+@section scripts { <script src="~/js/contact.js"></script>}
+
+<div class="row">
+    <div class="col s8 offset-s2">
+        <div class="center-align">
+            <p>
+                Please, fill out the form bellow to describe your project in details:
+            </p>
+        </div>
+
+        <form>
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">account_box</i>
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Your Name</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">email</i>
+                    <input id="email" type="email" class="validate">
+                    <label for="email">Email Address</label>
+                </div>
+
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">phone</i>
+                    <input id="client-contact" type="text" class="validate">
+                    <label for="client-contact">Phone / Skype #</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s12">
+                    <i class="material-icons prefix">mode_edit</i>
+                    <textarea id="project-description" class="materialize-textarea"></textarea>
+                    <label for="project-description">Project Description</label>
+                    <span class="helper-text" data-error="wrong" data-success="right">
+                        Describe the main goal of your project. What do you aim to achieve? Include most specific details and wishes.
+                    </span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">access_time</i>
+                    <select>
+                        <option value="" disabled selected>-</option>
+                        <option value="weeks">2 - 3 weeks</option>
+                        <option value="1month">1 month</option>
+                        <option value="2months">2 months</option>
+                        <option value="3months">3 months</option>
+                        <option value="ns">Not Sure</option>
+                    </select>
+                    <label>Expected Project Completion</label>
+                </div>
+                <div class="input-field col s6">
+                    <i class="material-icons prefix">attach_money</i>
+                    <input id="budget" type="number" class="validate">
+                    <label for="budget">Estimate Budget</label>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="file-field input-field col s12">
+                    <div class="form-details-color waves-effect waves-light btn">
+                        <span> File</span>
+                        <i class="material-icons right">cloud_upload</i>
+                        <input type="file" multiple>
+                    </div>
+                    <div class="file-path-wrapper">
+                        <input class="file-path validate" type="text" placeholder="Upload relevant files">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col s4 offset-s4 center-align">
+                    <button type="submit" class="form-details-color waves-effect waves-light btn-large">
+                        Submit
+                        <i class="material-icons right">send</i>
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+
+</div>
+

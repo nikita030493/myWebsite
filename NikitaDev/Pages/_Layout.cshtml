@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="~/lib/materialize/css/materialize.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="~/css/layout.css" rel="stylesheet"/>
+
+    @RenderSection("styles", false)
+
+</head>
+
+<body>
+
+<header class="teal lighten-1">
+    <nav class="teal lighten-1 z-depth-0">
+        <div class="nav-wrapper">
+            <a asp-page="About" style="padding-left: 10px;" class="brand-logo">NU</a>
+            <a href="#" data-target="mobile-nav-menu" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <ul class="right hide-on-med-and-down">
+                <li>
+                    <a asp-page="About">About <i class="material-icons right">person</i></a>
+                </li>
+                <li>
+                    <a asp-page="Contact">Contact <i class="material-icons right">phone_iphone</i></a>
+                </li>
+                <li>
+                    <a asp-page="Work">Work <i class="material-icons right">collections</i></a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <ul id="mobile-nav-menu" class="sidenav">
+        <li>
+            <a asp-page="About"><i class="material-icons right">person</i>About</a>
+        </li>
+        <li>
+            <a asp-page="Contact"><i class="material-icons right">phone_iphone</i>Contact</a>
+        </li>
+        <li>
+            <a asp-page="Work"><i class="material-icons right">collections</i>Work</a>
+        </li>
+    </ul>
+
+    <div class="container center-align">
+        <h3 style="padding-bottom: 20px; color: white;" >@ViewData["Title"]</h3>
+    </div>
+
+</header>
+
+<main style="padding-top: 20px;" class="container">
+    @RenderBody()
+</main>
+
+<footer class="page-footer teal lighten-3">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="white-text">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2018 Copyright Text
+            <a class="grey-text text-lighten-2 right" href="#!">More Links</a>
+        </div>
+    </div>
+</footer>    
+
+<script src="~/lib/materialize/js/bin/materialize.js"></script>
+<script src="~/js/layout.js"></script>
+
+@RenderSection("scripts", false)
+</body>
+</html>
