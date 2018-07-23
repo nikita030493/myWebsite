@@ -6,7 +6,7 @@ namespace NikitaDev.Pages
     {
         public void OnGet()
         {
-            //Test github
+            //https://docs.microsoft.com/en-us/vsts/git/gitquickstart?view=vsts&tabs=visual-studio
         }
     }
 }
